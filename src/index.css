@@ -106,7 +106,7 @@ footer button:hover {
 }
 
 .bgOverlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: #030615;
   opacity: 0.6;
@@ -122,7 +122,7 @@ footer button:hover {
   overflow-y: scroll;
   height: 100%;
   width: 75%;
-  max-width: 800px;
+  max-width: 500px;
   margin-left: auto;
   background: #030615;
 }
@@ -172,7 +172,7 @@ footer button:hover {
 .datePickerContainer {
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   z-index: 9;
   background: gray;
   padding: 1rem;
@@ -222,9 +222,11 @@ footer button:hover {
     position: relative;
     inset: unset;
     min-width: 30%;
-    box-shadow: 0 0 40px 10px #030615;
+    box-shadow: 0 0 70px 10px #030615;
+    margin-left: auto;
   }
   .sidebarContents {
     margin: unset;
+    width: 100%;
   }
 }
